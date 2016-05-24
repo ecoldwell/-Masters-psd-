@@ -1,0 +1,165 @@
+.portfolio {
+	height:120vh;
+}
+
+.portfolio .wrapper {
+	
+	
+	padding-top:5%;
+	padding-bottom:5%;
+
+		.portHeader {
+			display:flex;
+			flex-direction:row;
+			justify-content:space-between;
+			align-items:baseline;
+		}
+
+		.portIntro {
+			width:50%;
+
+			h3 {
+				font-size:2.5em;
+				margin:0px;
+			}
+
+			p {
+				letter-spacing:0.03em;
+				line-height:2em;
+			}
+		}
+
+	.portCheck select {
+		border: 0!important;
+		width:150px;
+		padding:3%;
+		height:30px;
+		border-radius:0%;
+		background:#FFFAFA;
+		border:1px solid $lightFont;
+
+
+
+	}
+
+		// .portCheck {
+		// 	text-transform:uppercase;
+		// 	font-weight:bolder;
+		// 	border:2px solid $teal;
+		// 	width:20%;
+		// 	transition:all 0.7s ease-in;
+		// 	margin-left:5%;
+		// 	margin-bottom:5%;
+
+		// 	&:hover {
+		// 		background:white;
+		// 		colot:teal;
+		// 	}
+
+		// 	p{
+		// 		color:$teal;
+		// 		font-weight:bolder;
+		// 		text-align:center;
+
+		// 	}
+
+
+		// }
+
+
+}
+
+.portPosts {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+	flex-wrap:wrap;
+
+
+		.portItem {
+			margin:1%;
+			width:31%;
+				img {
+					height:30vh;
+				}
+
+
+			// h4,
+			// p {
+			// 	padding-right:5%;
+			// 	padding-left:5%;
+			// }
+
+			h4 {
+				font-size:1.7em;
+				margin:0px;
+				margin-top:10px;
+			}
+
+			p {
+				line-height:1.5em;
+			}
+		}
+}
+
+			.portItem:nth-child(1) {
+				margin-left:0;
+			}
+
+
+@media(max-width:760px) {
+	.portfolio {
+		height:170vh;
+	}
+
+	.portPosts {
+		flex-wrap:wrap;
+
+		.portItem {
+			width:45%;
+		}
+	}
+}
+
+@media (max-width:480px) {
+	.portfolio {
+		height:270vh;
+
+		// .portfolio .wrapper{
+		// 	padding-top:10%;
+		// }
+	}
+
+	.portHeader {
+		display:flex;
+		// flex-wrap: wrap;
+		flex-direction:column;
+		align-content:center;
+		justify-content:center;
+
+			.portIntro {
+				width:100%;
+
+					h3 {
+						padding-top:5%;
+					}
+			}
+
+	}
+
+	.portPosts {
+		flex-wrap:wrap;
+	
+		justify-content:center;
+		align-items:center;
+			.portItem {
+				width:100%;
+				margin:auto;
+				text-align:center;
+			}
+	}
+}
+
+
+

@@ -1,0 +1,62 @@
+$teal: rgb(11, 182, 151);
+$lightFont: rgb(198, 193, 193);
+$darkFont: rgb(68,68,68);
+$lightBackground: rgb(234, 234, 235);
+
+body {
+	background:#FFFAFA;
+	font-family:"gotham", "Helvetica"; 
+	font-size:62.5%;
+}
+
+.wrapper {
+	max-width:1200px;
+	margin:0 auto;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	padding-left:10%;
+	padding-right:10%;
+}
+
+.innerWrapper {
+	width:80%;
+	margin:0 auto;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+img {
+	max-width:100%
+}
+
+h3,
+h4,
+h5,
+h6 {
+	font-weight:lighter;
+	color:$darkFont;
+	letter-spacing:0.03em;
+}
+
+p {
+	font-weight:lighter;
+	color:$lightFont;
+	line-height:1.3em;
+	letter-spacing:0.03em;
+}
+
+@media (max-width:760px) {
+	.wrapper {
+		padding-left:5%;
+		padding-right:5%;
+	}
+}
+
+@media (max-width:480px) {
+	.wrapper {
+		padding-left:3%;
+		padding-right:3%;
+	}
+}
